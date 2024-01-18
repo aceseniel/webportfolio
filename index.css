@@ -1,0 +1,68 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rokkitt', serif;
+	scroll-behavior: smooth;
+}
+
+
+#mynavbar {
+	background-color: black;
+}
+
+#navbarlogo {
+	width: 30px;
+	height: 30px;
+}
+
+#trainee-name {
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+#full-stack-web-developer {
+	font-size: 2.5rem;
+}
+
+#introduction {
+	font-size: 1.5rem;
+}
+
+
+#acepicture {
+	width: 50vh;
+	height: 55vh;
+}
+
+}
+
+#tools {
+	background-image: url(./images/contact.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.toollogo {
+	width: 150px;
+	height: 150px;
+}
+
+.contactlogo {
+	width: 40px;
+	height: 40px;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+#message, #visit-me {
+	font-size: 2rem;
+}
+
+#footer {
+	background-color: black;
+}
