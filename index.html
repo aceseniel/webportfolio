@@ -15,30 +15,36 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
 
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
 	<title>Ace Charl V. Seniel || Developer Portfolio</title>
 
 </head>
 <body>
 
 	<!-- Navbar Start -->
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="mynavbar">
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top navigation">
 		<img class="img-fluid" src="./images/logoace.png" id="navbarlogo">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link mr-3 text-center" href="#landing">About</a>
+			<ul class="navbar-nav ml-auto navigation">
+				<li class="nav-item active nav-list">
+					<a class="nav-link text-center navButton" href="#">Home</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link mr-3 text-center" href="#projects">Projects</a>
+				<li class="nav-item active nav-list">
+					<a class="nav-link text-center navButton" href="#about-me">About</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link mr-3 text-center" href="#tools">Tools</a>
+				<li class="nav-item active nav-list">
+					<a class="nav-link text-center navButton" href="#projects">Projects</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link mr-3 text-center" href="#contact">Contact</a>
+				<li class="nav-item active nav-list">
+					<a class="nav-link text-center navButton" href="#tools">Tools</a>
+				</li>
+				<li class="nav-item active nav-list">
+					<a class="nav-link text-center navButton" href="#contacts">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -47,68 +53,152 @@
 	<!-- Navbar End -->
 
 	<!-- Landing Start -->
-	<section id="landing">
-		<section class="container-fluid mt-5">
-			<div>
-				<div class="row p-3">
-					<div class="col-lg-6 order-lg-first order-last d-flex flex-column justify-content-center align-items-center text-center">
-						<h1 id="trainee-name" class="mt-5">Ace Charl V. Seniel</h1>
-						<h3 id="full-stack-web-developer">FULL-STACK WEB DEVELOPER</h3>
-						<p class="mt-5" id=introduction>Hello everyone! I am an ambitious Full-Stack Web Developer transitioning from the field of Civil Engineering. A professional with extensive programming experience who can work well in groups and on their own.</p>
-					</div>
-					<div class="col-lg-6 order-lg-last order-first d-flex flex-column justify-content-center align-items-center mt-5">
-						<img src="./images/acecharlpicture.jpg" class="img-fluid rounded-circle" id="acepicture">
-					</div>
-				</div>
+	<section id="home" class="container-fluid d-none d-md-flex justify-content-center align-items-center">
+		<div class="row">
+			<div class="col-sm-12 text-center pb-2 mb-2 title">
+				<h1 id="me">Hi! I'm Ace</h1>
 			</div>
-		</section>
+			<div class="col-sm-12 subtitle">
+				<div class="lightbar"></div>
+				<div class="toplayer"></div>
+				<h4 id="transitions"></h4>
+			</div>
+		</div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</section>
+
+	<section id="home" class="container-fluid d-md-none d-flex justify-content-center align-items-center">
+		<div class="row">
+			<div class="col-sm-12 text-center pb-2 mb-2 title">
+				<h1 id="me">Hi! I'm Ace</h1>
+			</div>
+			<div class="col-sm-12 subtitle">
+				<h3 id="profession">A Full-Stack Web Developer</h3>
+			</div>
+		</div>
 	</section>
 	<!-- Landing End -->
 
+	<section id="about-me"></section>
+
+	<!-- About Start -->
+	<section id="landing" class="container-fluid">
+		<div class="row">
+			<div class="col-12 d-flex flex-column justify-content-center align-items-center text-center mb-5 mt-3">
+				<h1 class="pageTitle">- ABOUT ME -</h1>
+			</div>
+			<div class="col-lg-7 order-lg-1 order-2 d-flex flex-column justify-content-center align-items-center text-center pl-5 pt-5 pt-md-0">
+				<h1 id="trainee-name">Ace Charl V. Seniel</h1>
+				<h3 id="full-stack-web-developer">FULL-STACK WEB DEVELOPER</h3>
+				<p class="mt-5 text-justify" id=introduction>Hello everyone! I am a dynamic Full-Stack Web Developer transitioning from the field of Civil Engineering. For front-end web development, I am proficient in HTML5, CSS3, Bootstrap, JavaScript and React. On the back-end web development, my expertise lies in Node.js, Express.js, and database management system like MongoDB. My goal is to build a high quality, fast, and flexible website that communicates clearly with its users. I have experience in the quality assurance field as a technical analyst. I am a professional who can work well in groups and on my own.</p>
+			</div>
+			<div class="col-lg-5 order-lg-2 order-1 d-flex flex-column justify-content-center align-items-center my-details">
+				<div class="my-photo">
+					<div class="imgbox">
+						<img src="./images/acecharlpicture.jpg" id="acepicture">
+					</div>
+					<div class="details">
+<!-- 						<h2 class="my-name">Ace Charl V. Seniel<br>
+							<span class="my-profession">Full-Stack Web Developer</span></h2> -->
+						<div class="d-flex justify-content-center align-items-center aboutButton">
+							<a href="#contacts" class="hireButton text-decoration-none">
+								Hire Me
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-lg-12 order-lg-3 order-3 d-flex flex-column justify-content-center align-items-center text-center pt-5 pb-2">
+				<h3 class="mt-5 font-italic quotes">“Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no hope at all.”</h3>
+				<h4 class="mt-5 quotes">~ Dale Carnegie ~</h4>
+			</div>
+		</div>
+	</section>
+	<!-- About End -->
+
+
 	<!-- Project Start -->
 	<section id="projects">
-		<div class="bg-secondary text-white mt-5 p-5">
-			<h3 class="mb-2 text-center">My Projects</h3>
+		<div class="text-white p-3 p-md-5 projectCards">
+			<h3 class="text-center pageTitle">- MY PROJECTS -</h3>
 			<!--Projects Container Start -->
-			<div class="d-lg-flex justify-content-center p-md-5">
+			<div class="d-lg-flex justify-content-center p-3">
 				<!-- Front End Programming Card Start -->
-				<div class="card bg-dark col-lg-4 mb-5 mb-lg-0">
+				<div class="card bg-white col-lg-4 mb-5 mb-lg-0">
 					<div class="card-body">
 						<img src="./images/webdesign.png" class="card-img-top img-fluid" alt="...">
-						<h5 class="card-title mt-3 text-center">WEB-PAGE DESIGNING</h5>
-						<h6 class="card-subtitle text-muted mb-2 text-center">Front End Programming</h6>
-						<p class="card-text text-justify">
-							Web design is the process of planning, envisioning, and implementing a plan to create a functional and user-friendly website. User experience is the foundation of the web design process. Websites contain a variety of elements presented in ways that make them easy to navigate. Web design focuses on every aspect of the website with which people interact, so that the website is easy and efficient, allows users to quickly access the information they want, and is visually appealing.
+						<h5 class="card-title mt-3 text-center text-dark projectTitle">WEB-PAGE PORTFOLIO</h5>
+						<h6 class="card-subtitle mb-2 text-center projectSubtitle">Front End Programming</h6>
+						<p class="card-text text-justify text-dark mt-3">
+							Designed and developed a static responsive web portfolio using <em>HTML5, CSS3, Bootstrap, Git</em> for version control, and hosted on <em>GitHub</em>.
 						</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+					<div class="card-footer cardFooter">
+						<div class="d-flex justify-content-center align-items-center cardButton">
+							<a href="https://aceseniel.github.io/webportfolio/" class="viewButton text-decoration-none" target="_blank">
+								<span class="lines"></span>
+								<span class="lines"></span>
+								<span class="lines"></span>
+								<span class="lines"></span>
+								View Here
+							</a>
+						</div>
 					</div>
 				</div>
 				<!-- Front End Programming Card End -->
 
 				<!-- Back End Programming Card Start -->
-				<div class="card bg-dark col-lg-4 mb-5 mb-lg-0 ml-lg-3 mr-lg-3">
+				<div class="card bg-white col-lg-4 mb-5 mb-lg-0 ml-lg-3 mr-lg-3">
 					<div class="card-body">
-						<img src="./images/ecommerce.png" class="card-img-top img-fluid" alt="...">
-						<h5 class="card-title mt-3 text-center">E-COMMERCE</h5>
-						<h6 class="card-subtitle text-muted mb-2 text-center">Back End Programming</h6>
-						<p class="card-text text-justify">
-							E-commerce is the trading of products and services via the Internet. It's your bustling city center or brick-and-mortar store transformed into zeros and ones on the internet superhighway. An e-commerce website is a digital storefront on the internet. It facilitates the transaction between a buyer and a seller. It is the virtual space where you present products, and online shoppers make selections. Your website serves as the product shelves, sales crew, and cash register for your online business channel.
+						<img src="./images/api.png" class="card-img-top img-fluid" alt="...">
+						<h5 class="card-title mt-3 text-center text-dark projectTitle">E-COMMERCE API</h5>
+						<h6 class="card-subtitle mb-2 text-center projectSubtitle">Back End Programming</h6>
+						<p class="card-text text-justify text-dark mt-3">
+							Created an E-Commerce Store Backend API using <em>JavaScript, ES6, Node.js, Express.js, MongoDB, Git</em> for version control, and hosted on <em>AWS</em>. <em>(<strong>NOTE</strong>: Features developed in the E-Commerce API can be seen in the E-Commerce Website.)</em> 
 						</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+					<div class="card-footer cardFooter">
+						<div class="d-flex justify-content-center align-items-center cardButton">
+							<a href="http://zuitt-bootcamp-prod-384-6720-seniel.s3-website.us-east-1.amazonaws.com/" class="viewButton text-decoration-none" target="_blank">
+								<span class="lines"></span>
+								<span class="lines"></span>
+								<span class="lines"></span>
+								<span class="lines"></span>
+								View Here
+							</a>
+						</div>
 					</div>
 				</div>
 				<!-- Back End Card End -->
 
 				<!-- Full Stack Card Start -->
-				<div class="card bg-dark col-lg-4 mb-5 mb-lg-0">
+				<div class="card bg-white col-lg-4 mb-5 mb-lg-0">
 					<div class="card-body">
-						<img src="./images/api.png" class="card-img-top img-fluid" alt="...">
-						<h5 class="card-title mt-3 text-center">E-COMMERCE API</h5>
-						<h6 class="card-subtitle text-muted mb-2 text-center">Full-Stack Programming</h6>
-						<p class="card-text text-justify">
-							An E-commerce API allows applications within an E-commerce platform to communicate with one another, as well as between E-commerce platforms and other linked systems. Catalog material, order management, pricing information, and client data are all examples of such services.  Developers design and publish APIs to assist online traders and customers connect via websites and platforms, transforming data into useful business information and integrating with other services for ease of use.
+						<img src="./images/ecommerce.png" class="card-img-top img-fluid" alt="...">
+						<h5 class="card-title mt-3 text-center text-dark projectTitle">E-COMMERCE STORE WEBSITE</h5>
+						<h6 class="card-subtitle mb-2 text-center projectSubtitle">Full-Stack Programming</h6>
+						<p class="card-text text-justify text-dark mt-3">
+							Developed a React-based E-Commerce store web application with <em>API integration</em> and responsive design, utilizing modern <em>JavaScript</em> techniques and <em>DOM manipulation</em>.
 						</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+					<div class="card-footer cardFooter">
+						<div class="d-flex justify-content-center align-items-center cardButton">
+							<a href="http://zuitt-bootcamp-prod-384-6720-seniel.s3-website.us-east-1.amazonaws.com/" class="viewButton text-decoration-none" target="_blank">
+								<span class="lines"></span>
+								<span class="lines"></span>
+								<span class="lines"></span>
+								<span class="lines"></span>
+								View Here
+							</a>
+						</div>
 					</div>
 				</div>
 				<!-- Full Stack Card End -->
@@ -119,10 +209,14 @@
 	<!-- Projects Section End -->
 
 	<!-- Tools Start -->
-	<section id="tools">
-		<div class="pt-5 pb-5">
-			<h3 class="text-center">My Tools</h3>
-			<div class="d-flex flex-column justify-content-center align-items-center">
+	<section id="tools" class="container-fluid">
+		<h3 class="text-center pt-md-5 pb-md-2 pt-4 pb-4 pageTitle">- MY TOOLS -</h3>
+		<div class="row">	
+			<div class="col-md-6 d-none d-md-flex flex-column justify-content-center align-items-center">
+				<img class="img-fluid programmer" src="images/programming.png" >
+			</div>
+			<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+				<h3 class="text-center toolTitle">CORE TOOLS</h3>
 				<div id="html" class="d-flex flex-wrap justify-content-center">
 					<img class="img-fluid toollogo m-2" src="images/logo-html5.png"/>
 					<img class="img-fluid toollogo m-2" src="images/logo-bootstrap.png"/>
@@ -131,6 +225,7 @@
 					<img class="img-fluid toollogo m-2" src="images/logo-git.png"/>
 					<img class="img-fluid toollogo m-2" src="images/logo-sublime-text-3.png"/>
 				</div>
+				<h3 class="text-center mt-5 toolTitle">OTHER TOOLS</h3>
 				<div class="d-flex flex-wrap justify-content-center">
 					<img class="img-fluid toollogo m-2" src="images/logo-mongodb.png"/>
 					<img class="img-fluid toollogo m-2" src="images/logo-nodejs.png"/>
@@ -138,7 +233,6 @@
 					<img class="img-fluid toollogo m-2" src="images/logo-react.png"/>
 					<img class="img-fluid toollogo m-2" src="images/logo-postman.png"/>
 					<img class="img-fluid toollogo m-2" src="images/logo-gitlab-ci-cd.png"/>
-					<img class="img-fluid toollogo m-2" src="images/logo-heroku.png"/>
 				</div>
 			</div>
 		</div>
@@ -146,67 +240,48 @@
 	<!-- Tools End -->
 
 	<!-- Contacts Start -->
-	<section id="contact">
-		<div class="bg-white container-fluid p-5 mb-5"  id="contact-section">
-			<h3 class="text-center">My Contacts</h3>
-			<div id="html" class="d-flex flex-wrap justify-content-center">
-				<a href="https://www.facebook.com/" target="_blank"><img class="img-fluid contactlogo mt-2" src="images/facebook.png"/></a>
-				<a href="https://www.linkedin.com/" target="_blank"><img class="img-fluid contactlogo mt-2 ml-5 mr-5" src="images/linkedin.png"/></a>
-				<a href="https://twitter.com/" target="_blank"><img class="img-fluid contactlogo mt-2" src="images/twitter.png"/></a>
-			</div>
-			<!-- Message Me Start -->
-			<div class="row">
-				<div class="col-12 d-flex flex-column justify-content-center align-items-center">
-					<h3 id="message" class="text-dark text-center mt-5">Message Me</h3>
-
-					<div>
-						<div id="form-col">
-							<form class="bg-dark p-3 rounded">
-								<div class="form-group">
-									<label class="text-white" for="name">Name:</label>
-									<input type="text" class="form-control" id="name" placeholder="Full Name">
-								</div>
-								<div class="form-group">
-									<label class="text-white" for="email">Email address:</label>
-									<input type="email" class="form-control" id="email" placeholder="mail@gmail.com">
-								</div>
-								<div class="form-group">
-									<label class="text-white" for="contact">Contact Number:</label>
-									<input type="text" class="form-control" id="contact" placeholder="0912 345 6789">
-								</div>
-								<div class="form-group">
-									<label class="text-white" for="message">Message:</label>
-									<textarea class="form-control" id="message" rows="3"></textarea>
-								</div>
-								<button type="button" class="btn btn-white bg-white col-12" data-toggle="modal" data-target="#modalDiv">Send Email</button>
-							</form>
+	<section id="contacts">
+		<div class="container-fluid p-3 p-md-5"  id="contact-section">
+			<h3 class="text-center text-white pageTitle">- MY CONTACTS -</h3>
+			<div class="row mt-2">
+				<div class="col-md-6">
+					<div class="p-5">
+						<h4 class="text-center text-white contactMe">SOCIAL MEDIA</h4>
+						<div>
+							<div id="html" class="d-flex flex-wrap justify-content-center text-center">
+								<a class="icon" href="https://www.facebook.com/acecharl.seniel/" target="_blank">
+								  <i class="fab fa-facebook-f"></i>
+								</a>
+								<a class="icon" href="https://www.instagram.com/acecharlseniel/" target="_blank">
+								  <i class="fab fa-instagram"></i>
+								</a>
+								<a class="icon" href="https://www.linkedin.com/in/ace-charl-seniel/" target="_blank">
+								  <i class="fab fa-linkedin-in"></i>
+								</a>
+								<a class="icon" href="https://github.com/aceseniel" target="_blank">
+								  <i class="fab fa-github"></i>
+								</a>
+							</div>
 						</div>
 					</div>
+					<div class="text-center text-white p-5">
+						<h4 class="contactMe">EMAIL ADDRESS</h4>
+						<p class="myContacts">acecharlseniel@gmail.com</p>
+					</div>
+					<div class="text-center text-white p-5">
+						<h4 class="contactMe">CONTACT NUMBER</h4>
+						<p class="myContacts">09690682441</p>
+					</div>
 				</div>
-				<!-- Message Me End -->
+
+				<div class="col-md-6 d-none d-md-flex flex-column justify-content-center align-items-center">
+					<img class="img-fluid socials" src="images/socials.png" >
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- Contacts End -->
 
-	<!-- Modal Start -->
-	<div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Thank you for messaging me!</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body text-center">Message Sent!</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Modal End -->
 
 	<!-- footer -->
 	<footer class="container-fluid" id="footer">
