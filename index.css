@@ -123,6 +123,12 @@ body {
     border-bottom: 2px solid red;
 }
 
+.smallTitle {
+	font-size: 21px;
+	z-index: 2;
+	border-bottom: 2px solid red;
+}
+
 #me {
     color: white;
     font-size: 5em;
@@ -133,7 +139,7 @@ body {
 #profession {
     color: #fff;
     font-family: arial;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-shadow: 0 0 10px #00b3ff;
@@ -290,6 +296,7 @@ body {
 #landing {
 	min-height: 100vh;
 	padding-top: 32px;
+	overflow-x: hidden;
 }
 
 #trainee-name {
